@@ -1,0 +1,480 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos Globais */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #081C15;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    gap: 20px;
+}
+
+section {
+    text-align: center;
+}
+
+/* Cabeçalho */
+header {
+    width: 100%;
+    padding: 20px 0;
+    background-color: #1B4332;
+    display: flex;
+    justify-content: center;
+}
+
+nav {
+    background-color: #1B4332;
+    border-radius: 20px;
+    padding: 20px 0;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    flex: 1;
+    text-align: center;
+}
+
+nav ul li .logo {
+    flex-grow: 0;
+    margin: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    padding: 10px 15px;
+    transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.logo img {
+    max-height: 50px;
+    display: block;
+}
+
+/* Seção Principal */
+.container {
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    max-height: 100%;
+    max-width: 100%;
+    display: flex;
+}
+
+.conteudo {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    padding-right: 40px;
+    padding-left: 40px;
+}
+
+.imagem-lateral {
+    width: 80%;
+    border-radius: 80%;
+}
+
+.imagem-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 650px;
+    height: 650px;
+}
+
+/* Títulos */
+h1 {
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #CCFF33;
+}
+
+h2 {
+    font-size: 28px;
+    font-weight: 500;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #CCFF33;
+}
+
+
+h1,h2 {
+    line-height: 1.4;
+    /* Aumenta o espaçamento entre linhas */
+}
+
+/* Seção de Cartões */
+.card-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 20px;
+    justify-content: center;
+}
+
+.card-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    background-color: #1B4332;
+    border-radius: 5%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 400px;
+    height: 600px;
+    display: flex;
+    position: relative;
+    
+}
+
+.profile-image:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 25px rgba(37, 187, 14, 0.2);
+}
+
+.profile-image {
+    border-radius: 20px;
+    max-width: 400px;
+    max-height: 600px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.nome-pessoa {
+    font-size: 32px;
+    padding: 6px;
+}
+
+/* Imagens */
+.imagem-home {
+    width: 400px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+}
+
+/* Rodapé */
+footer {
+    background-color: #1B4332;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 110px;
+}
+
+/* Cabeçalho */
+header {
+    width: 100%;
+    padding: 20px 0;
+    background-color: #1B4332;
+    /* Verde escuro */
+    display: flex;
+    justify-content: center;
+}
+
+/* Estilos adicionais para a navegação */
+/* Gradiente e sombra no cabeçalho */
+header,
+footer {
+    background: linear-gradient(90deg, #1B4332, #1D6F42);
+    /* Gradiente com verde escuro e verde mais claro */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+    background: none;
+    /* Remove o fundo sólido */
+    border-radius: 20px;
+    padding: 20px 0;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Links de navegação com ícones */
+nav ul li a {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #ffffff;
+    /* Dourado */
+    font-size: 18px;
+    padding: 10px 15px;
+    transition: all 0.3s ease;
+}
+
+nav ul li a i {
+    margin-right: 8px;
+}
+
+/* Animação de destaque ao passar o mouse */
+nav ul li a::before {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background-color: #F39C12;
+    /* Destaque dourado */
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+nav ul li a:hover::before {
+    transform: scaleX(1);
+}
+
+nav ul li a:hover {
+    color: #fff;
+    /* Cor de texto ao passar o mouse */
+}
+
+/* Logo ajustado */
+nav ul li.logo {
+    flex-grow: 0;
+    margin: 0 20px;
+}
+
+.logo img {
+    max-height: 50px;
+    display: block;
+}
+
+/* Responsividade */
+@media (max-width: 810px) {
+    header {
+        height: 380px;
+    }
+    section {
+        width: auto;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        text-align: left;
+        padding: 10px 0;
+    }
+
+    .logo img {
+        max-height: 40px;
+    }
+}
+
+@media (max-width: 900px) {
+    .container {
+        flex-direction: column;
+        width: 100%;
+        gap: 20px;
+    }
+
+    .imagem-section {
+        width: auto;
+        height: 40%;
+    }
+
+    .conteudo {
+        display: flex;
+        flex-direction: column;
+        font-size: 2vw;
+        width: 100%;
+        height: auto;
+        padding-right: 40px;
+        line-height: 1.2;
+    }
+
+    .titulos {
+        font-size: 2vw;
+    }
+
+    #planta {
+        width: 40%;
+        height: 20%;
+    }
+
+    
+
+}
+
+@media (max-width: 1200px) { 
+    .card-container {
+        flex-direction: column;
+        width: auto;
+        height: auto;
+        font-size: 2vw;
+    }
+
+    .card-section {
+        width: auto;
+        justify-content: center;
+    }
+
+    .card {
+        width: auto;
+        height: 40%;
+    }
+}
+
+@media (max-width: 1000px) {
+    #trouble {
+        width: auto;
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    #biopark {
+        width: 60%;
+        height: 80%;
+    }
+}
+
+/* Sombras e efeitos de camada nos cartões */
+.profile-image {
+    box-shadow: 0 5px 15px rgba#CCFF33;
+    /* Adiciona sombra */
+}
+
+
+.card:hover {
+    box-shadow: 0 15px 25px rgba(4, 237, 23, 0.1);
+    /* Aumenta a sombra ao passar o mouse */
+}
+
+
+.local-proteins{
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/* Estilos para a terceira seção */
+section:nth-of-type(3) {
+    background-color: #081C15;
+    color: #fff;
+    
+    display: flex;
+    justify-content: center;
+}
+
+section:nth-of-type(3) .container {
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+}
+
+section:nth-of-type(3) .conteudo {
+    flex: 1;
+    padding-right: 20px;
+    text-align: justify;
+}
+
+section:nth-of-type(3) .imagem-section {
+    width: 50%;
+    max-width: 600px;
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 768px) {
+    section:nth-of-type(3) .container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    section:nth-of-type(3) .imagem-section {
+        width: 80%;
+        margin-top: 20px;
+    }
+}
+
+/* Seção Nossa Casa */
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.conteudo {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    padding-right: 40px;
+    line-height: 1.2;
+}
+
+.imagem-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 650px;
+    height: 650px;
+}
+
+.imagem-container img {
+    max-width: 100%;
+    border-radius: 10%;
+}
+
+#biopark {
+    max-width: 600px;
+    max-height: 80%;
+    overflow: hidden; /* Esconde as partes da imagem que saem da div */
+    border-radius: 10%;
+  }
+  
+  .responsive-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Faz a imagem cobrir toda a área da div */
+  }
+  
+  .bold {
+    font-size: 2vw;
+}

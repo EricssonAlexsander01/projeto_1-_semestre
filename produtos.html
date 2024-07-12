@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Produtos</title>
+    <link rel="stylesheet" href="./css/produtos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <button class="menu-toggle"><i class="fas fa-bars"></i></button>
+            <ul class="menu">
+                <li><a href="./Index.html"><i class="fas fa-home"></i> Principal</a></li>
+                <li><a href="./historia.html"><i class="fas fa-book"></i> História</a></li>
+                <li class="logo"><img src="./images/imagensSustetabilidade/logo.png" alt="Logo da Empresa"></li>
+                <li><a href="./sustentatibilade.html"><i class="fas fa-leaf"></i> Sustentabilidade</a></li>
+                <li><a href="./produtos.html"><i class="fas fa-box-open"></i> Produtos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main">
+        <section class="product-grid">
+            <article class="product-container">
+                <img class="product-image" src="./images/imagensProdutos/animas de modo geral.png" alt="Descrição do Produto">
+                <a href="./vendatenebriospeixes.html">
+                    <button class="buy-button">Tenébrios Desitratados: Peixes-Tartarugas-Pássaros</button>
+                </a>
+            </article>
+            <article class="product-container">
+                <img class="product-image" src="./images/imagensProdutos/réptil.png" alt="Descrição do Produto">
+                <a href="./vendatenebriosrepteis.html">
+                    <button class="buy-button">Tenébrios Desitratados: Répteis</button>
+                </a>
+            </article>
+            <article class="product-container">
+                <img class="product-image" src="./images/imagensProdutos/passaro.png" alt="Descrição do Produto">
+                <a href="./vendatenebriospassaros.html">
+                    <button class="buy-button">Tenébrios Desitratados: Pássaros</button>
+                </a>
+            </article>
+            <article class="product-container">
+                <img class="product-imageMolitor" src="images/imagensProdutos/Molitor.png" alt="Descrição do Produto">
+                <a href="Molitor.html">
+                    <button class="buy-buttonMolitor">Tenébrio Molitor</button>
+                </a>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <h1 class="h1footer">© 2023 PROTEINS. ALL RIGHTS RESERVED. SITE DESIGNED AND BUILT BY WILDERN DESIGN &
+            INTERACTIVE</h1>
+        <h1 class="h1footer">Proteins</h1>
+        <a href="https://www.instagram.com/proteins_oficial?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">
+            <img class="insta" src="./images/imagensHome/Icon.png" alt="insta">
+        </a>
+    </footer>
+    <script>
+        document.querySelector('.menu-toggle').addEventListener('click', function () {
+            document.querySelector('.menu').classList.toggle('menu-open');
+        });
+    </script>
+</body>
+</html>

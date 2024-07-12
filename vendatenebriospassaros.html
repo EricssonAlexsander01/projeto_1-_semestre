@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Produtos</title>
+    <link rel="stylesheet" href="./css/produtos.css">
+    <link rel="stylesheet" href="./css/vendatenebriospassaros.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <button class="menu-toggle"><i class="fas fa-bars"></i></button>
+            <ul class="menu">
+                <li><a href="./Index.html"><i class="fas fa-home"></i> Principal</a></li>
+                <li><a href="./historia.html"><i class="fas fa-book"></i> História</a></li>
+                <li class="logo"><img src="./images/imagensSustetabilidade/logo.png" alt="Logo da Empresa"></li>
+                <li><a href="./sustentatibilade.html"><i class="fas fa-leaf"></i> Sustentabilidade</a></li>
+                <li><a href="./produtos.html"><i class="fas fa-box-open"></i> Produtos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <article class="product-containers">
+            <div class="product-details">
+                <div class="product-images">
+                    <img src="./images/imagensProdutos/passaro.png" alt="Descrição do Produto">
+                    <div class="button-container">
+                        <a href="https://www.amazon.com.br/?tag=msndesktopabk-20&ref=pd_sl_7to86bd2ph_e&adgrpid=1141293728081284&hvadid=71331080112049&hvnetw=o&hvqmt=e&hvbmt=be&hvdev=c&hvlocint=&hvlocphy=147753&hvtargid=kwd-71331371436168:loc-20&hydadcr=26346_11803856&msclkid=065c138d473a125eb0c275ff044efae0">
+                            <button class="b-button">Comprar</button>
+                        </a>
+                    </div>
+                </div>
+                <div class="product-infos">
+                    <h2>Tenébrios Desitratados: Pássaros</h2>
+                    <ul>
+                        <li>Proteína: Alta fonte de proteína para suporte muscular e saúde geral.</li>
+                        <li>Gorduras Saudáveis: Contribui para energia e saúde de penas e pele.</li>
+                        <li>Vitaminas e Minerais: Inclui vitaminas do complexo B (B1, B2, B3, B5, B6, B12), cálcio, fósforo, potássio e magnésio.</li>
+                        <li>Fibra: Ajuda na digestão adequada.</li>
+                        <li>Armazenamento: Manter em local fresco e seco.</li>
+                        <li>Não para consumo humano.</li>
+                        <li>Supervisionar o consumo.</li>
+                    </ul>
+                </div>
+            </div>
+        </article>                
+    </main>
+    <footer>
+        <h1 class="h1footer">© 2023 PROTEINS. ALL RIGHTS RESERVED. SITE DESIGNED AND BUILT BY WILDERN DESIGN &
+            INTERACTIVE</h1>
+        <h1 class="h1footer">Proteins</h1>
+        <a href="https://www.instagram.com/proteins_oficial?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">
+            <img class="insta" src="./images/imagensHome/Icon.png" alt="insta">
+        </a>
+    </footer>
+    <script>
+        document.querySelector('.menu-toggle').addEventListener('click', function () {
+            document.querySelector('.menu').classList.toggle('menu-open');
+        });
+    </script>
+</body>
+
+</html>
